@@ -1,0 +1,127 @@
+:root {
+/* Fonts */
+--main-font-family: 'Roboto', sans-serif;
+--secondary-font-family: 'Raleway', sans-serif;
+/* Colors */
+--main-dark-color: #2F303A;
+--main-light-color: #fff;
+--current-color: #2196F3;
+--main-color: #212121;
+--secondary-color: #757575;
+--section-color: #F5F4FA;
+}
+
+body {
+    font-family: var(--main-font-family);
+    font-weight: 500;
+    font-size: 18px;
+    font-style: normal;
+    color: var(--main-color);
+}
+/* Common Styles */
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+.btn {
+    border: 4px;
+    background-color: var(--current-color);
+    cursor: pointer;
+    font-family: inherit;
+    color: var(--main-light-color);
+}
+.list {
+    list-style: none;
+}
+.section {
+    background-color: var(--main-light-color);
+}
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    color: var(--main-color);
+}
+.current {
+color: var(--current-color);
+}
+/* Header */
+.header {
+    background-color: var(--main-light-color);
+}
+.logo {
+    font-family: var(--secondary-font-family);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 0.8;
+    color: var(--main-dark-color);
+    text-decoration: none;
+}
+.nav-list {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;
+    color: var(--main-color);
+}
+.contacts {
+    font-size: 14px;
+    line-height: 1.15;
+    color: var(--secondary-color);
+}
+
+/* Section 1*/
+.top-section {
+    background-color: var(--main-dark-color);
+}
+.top-class {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    color: var(--main-light-color);
+    
+  
+}
+/* Section 2*/
+.chanse-item {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.15;
+    color: var(--main-color);
+}
+.chanse-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+}
+.unseen{
+    display: none;
+}
+/* Section 4 */
+.team-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+}
+.team-skill {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--secondary-color);
+}
+/* Footer */
+.footer {
+    background-color: var(--main-dark-color);
+}
+.footer-logo {
+    color: var(--main-light-color);
+}
+.footer-contacts {
+    color: var(--main-light-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+}
+.contacts-link {
+color: rgba(255, 255, 255, 0.6);
+}
