@@ -46,7 +46,26 @@ body {
 .current {
 color: var(--current-color);
 }
-/* Header */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.link:active .link:focus,
+.link:hover {
+color: var(--current-color);
+}
+
+    /* Header */
 .header {
     background-color: var(--main-light-color);
 }
@@ -79,8 +98,17 @@ color: var(--current-color);
     font-size: 44px;
     line-height: 1.36;
     color: var(--main-light-color);
-    
-  
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.top-btn {
+    width: 200px;
+    height: 50px;
+    left: 700px;
+    top: 430px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 /* Section 2*/
 .chanse-item {
@@ -88,16 +116,21 @@ color: var(--current-color);
     font-size: 14px;
     line-height: 1.15;
     color: var(--main-color);
+    text-transform: uppercase;
 }
 .chanse-text {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
+    color: var(--secondary-color);
 }
 .unseen{
     display: none;
 }
 /* Section 4 */
+.back {
+background-color: #F5F4FA;;
+}
 .team-name {
     font-weight: 500;
     font-size: 16px;
@@ -118,10 +151,47 @@ color: var(--current-color);
 }
 .footer-contacts {
     color: var(--main-light-color);
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
 }
 .contacts-link {
 color: rgba(255, 255, 255, 0.6);
+}
+.footer-contacts:active .footer-contacts:focus,
+.footer-contacts:hover {
+    color: var(--current-color);
+}
+/* Portfolio */
+.portfolio-btn {
+    font-style: normal;
+    width: 128px;
+    height: 38px;
+    left: 576px;
+    top: 174px;
+    color: var(--main-color);
+    background: var(--section-color);
+    border-radius: 4px;
+}
+.portfolio-btn:active .portfolio-btn:focus,
+.portfolio-btn:hover {
+    color: var(--main-light-color);
+    background-color: var(--current-color);
+}
+.project-name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--main-color);
+}
+.project-type {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    color: #757575;
 }
